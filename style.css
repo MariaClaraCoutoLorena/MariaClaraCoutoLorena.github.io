@@ -1,0 +1,157 @@
+html, body {
+  background-color: #1b1d83b6;
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-family: Roboto, 'Open Sans', Arial, sans-serif;
+}
+header {
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background: #11125f;
+}
+header #logo {
+  position: absolute;
+  top: .5rem;
+  float: left;
+  height: 3.5rem;
+  width: 17rem;
+  margin-left: 5%;
+}
+header #logo img{
+  max-height: 100%;
+}
+header .menu {
+  float: right;
+  list-style: none;
+  margin-top: 0px;
+  margin-right: 5%;
+}
+header .menu li {
+  float: left;
+  font-size: 18px;
+  padding: 20px 10px;
+}
+header .menu li a {
+  text-decoration: none;
+  color:#ffffff;
+}
+header .menu li:hover {
+  background-color: #0a0c83e1;
+  transition: 0.5s;
+}
+figure {
+  margin: 0;
+}
+figure .imagem_fundo {
+  background: url(/images/bg.jpeg);
+  background-size: cover;
+  height: 100%;
+  padding: 2rem;
+}
+figure .titulo, h1{
+  font-size: 2.5rem;
+  color: #ffffff;
+  line-height: 0.9;
+  text-align: center;
+  text-shadow: .2rem .2rem black;
+}
+figure h1.titulo {
+  font-size: 70px;
+  letter-spacing: -.4rem;
+  margin: 20% 20% 0 20%;
+  padding-bottom: 2rem;
+}
+figure h2.titulo {
+  padding-top: 2rem;
+  font-size: 2.5rem;
+  margin: 0 30%;
+  border-top: .3rem solid #ffffff;
+  padding-bottom: 3rem;
+}
+section {
+  width: 90%;
+  margin: 0;
+  overflow: hidden;
+  padding: 3rem;
+}
+.coluna {
+  float: left;
+  padding: 0 3%;
+  position: relative;
+  width: 40%;
+}
+.coluna img {
+  width: 70%;
+  margin: 1rem auto;
+  border-radius: 20rem;
+}
+.justificado {
+  text-align: justify;
+  color: #dee2cae7;
+  font-size: 1.2rem;
+}
+.transparent{
+  background-color: #aebffc2f;
+  border-radius:3rem ;
+  margin: 1rem auto;
+  padding: .5rem;
+}
+.buttom{
+  background-color: #060431;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 4rem;
+  text-align: center;
+}
+.buttom a{
+  text-decoration: none;
+  color: #b9e2fa;
+  font-size: 1.2rem;
+}
+.buttom:hover{
+  background-color: #060431d5;
+  transition: 0.5s;
+}
+footer{
+  background-color: #11125f;
+  width: 97.8%;
+  padding: .3rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  color: #d4efffb9;
+}
+@media all and (max-width: 768px) {
+  .coluna {
+    display: block;
+    width: 80%;
+    padding: 0;
+    margin: 1rem auto;
+    float: none;
+  }
+  .coluna img{
+    margin: 0 15%;
+  }
+  header #logo {
+    position: relative;
+    width: 100%;
+    margin-left: 0rem;
+    text-align: center;
+  }
+  .menu {
+    visibility: hidden;
+  }
+  figure h1.titulo {
+    margin-top: 40%;
+  }
+  figure h2.titulo {
+    margin: 0 10%;
+  }
+  footer{
+    width: 95.5%;
+    font-size: 1rem ;
+  }
+}
